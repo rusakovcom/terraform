@@ -1,2 +1,2 @@
 # put here your key
-export MY_API_KEY=<api_key>
+export MY_API_KEY=<your_key>
