@@ -2,7 +2,7 @@
 # terraform plan -var-file=secrets.tfvars
 # terraform apply -var-file=secrets.tfvars
 # terraform show
-# terraform destroy
+# terraform destroy -var-file=secrets.tfvars
 
 resource "serverspace_server" "server1" {
   name = "server1"
