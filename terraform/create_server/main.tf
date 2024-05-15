@@ -3,6 +3,7 @@
 # terraform apply -var-file=secrets.tfvars
 # terraform show
 # terraform destroy -var-file=secrets.tfvars
+# rm -rf .terraform.lock.hcl terraform.tfstate terraform.tfstate.backup .terraform
 
 resource "serverspace_server" "server1" {
   name = "server1"
