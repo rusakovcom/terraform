@@ -1,7 +1,11 @@
 # export key
 
 export MY_API_KEY=123456789
+
 printenv | grep MY_API_KEY
+
+unset MY_API_KEY
+
 
 # get servers list (tested)
 
