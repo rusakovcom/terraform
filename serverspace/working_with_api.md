@@ -50,8 +50,10 @@ curl -s -H "Content-Type: application/json" -H "X-API-KEY: $MY_API_KEY" https://
 
 
 # create server
-# example images: "Ubuntu-20.04-X64","Oracle-9.3-X64","Oracle-8.6-X64","CentOS-7.9-X64","Debian-12-X64","Ubuntu-22.04-X64","FreeBSD-14.0-X64","Windows-Server 2022-X64","Windows-Server 2019-X64"
-# example images: ds1, am2, kz
+
+example images: "Ubuntu-20.04-X64","Oracle-9.3-X64","Oracle-8.6-X64","CentOS-7.9-X64","Debian-12-X64","Ubuntu-22.04-X64","FreeBSD-14.0-X64","Windows-Server 2022-X64","Windows-Server 2019-X64"
+
+example images: ds1, am2, kz
 
 curl -X POST https://api.serverspace.io/api/v1/servers \
 -H "Content-Type: application/json" \
