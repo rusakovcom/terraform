@@ -41,7 +41,11 @@ curl -X POST "https://api.serverspace.io/api/v1/servers/{server_id}/snapshots/{s
 
 # get list of images, locations, apps
 curl -s -H "Content-Type: application/json" -H "X-API-KEY: $MY_API_KEY" https://api.serverspace.io/api/v1/images | json_pp
+
+
 curl -s -H "Content-Type: application/json" -H "X-API-KEY: $MY_API_KEY" https://api.serverspace.io/api/v1/locations | json_pp
+
+
 curl -s -H "Content-Type: application/json" -H "X-API-KEY: $MY_API_KEY" https://api.serverspace.io/api/v1/applications  | json_pp
 
 
