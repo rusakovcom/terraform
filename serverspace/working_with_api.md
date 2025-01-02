@@ -1,8 +1,8 @@
 # export key 
-
+```bash
 export MY_API_KEY=<key from https://my.serverspace.io/automation>
 printenv | grep MY_API_KEY   # check
-
+```
 # get servers list (tested)
 
 curl -s -H "Content-Type: application/json" -H "X-API-KEY: $MY_API_KEY" https://api.serverspace.io/api/v1/servers | json_pp
