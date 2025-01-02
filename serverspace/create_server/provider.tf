@@ -11,7 +11,7 @@ terraform {
 
 variable "s2_token" {
   type = string
-  default = "<you api key>" # put it in secrets.tfvars
+  default = "<you api key>" # put it in terraform.tfvars
 }
 
 provider "serverspace" {
@@ -21,5 +21,5 @@ provider "serverspace" {
 ### ssh key for adding to Linux server
 
 variable "ssh_key_id" {
-  default = "<your_ssh_key_id>" # put it in secrets.tfvars
+  default = "<your_ssh_key_id>" # put it in terraform.tfvars
 }
