@@ -2,7 +2,7 @@ terraform {
   required_providers {
     serverspace = {
       source = "itglobalcom/serverspace"
-      version = "0.3.0"
+      version = "0.3.1"
     }
   }
 }
