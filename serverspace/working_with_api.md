@@ -1,4 +1,4 @@
-# export key 
+### export key 
 ```bash
 export MY_API_KEY=<key from https://my.serverspace.io/automation>
 printenv | grep MY_API_KEY   # check
