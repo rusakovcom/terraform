@@ -20,10 +20,10 @@ resource "serverspace_server" "server1" {
   ]
 }
 
-# terraform init -var-file=secrets.tfvars
-# terraform plan -var-file=secrets.tfvars
-# terraform apply -var-file=secrets.tfvars
+# terraform init
+# terraform plan
+# terraform apply
 # terraform show
-# terraform init -var-file=secrets.tfvars && terraform plan -var-file=secrets.tfvars && terraform apply -var-file=secrets.tfvars && terraform show
-# terraform destroy -var-file=secrets.tfvars
-# rm -rf .terraform.lock.hcl terraform.tfstate terraform.tfstate.backup .terraform
+# terraform init && terraform plan && terraform apply && terraform show
+# terraform destroy
+# rm -rf .terraform.lock.hcl terraform.tfstate* .terraform
