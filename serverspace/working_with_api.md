@@ -11,6 +11,12 @@ printenv | grep MY_API_KEY   # check
 curl -s -H "Content-Type: application/json" -H "X-API-KEY: $MY_API_KEY" https://api.serverspace.io/api/v1/servers | json_pp
 ```
 
+### get ssh keys lisy
+
+```bash
+curl -s -H "Content-Type: application/json" -H "X-API-KEY: $MY_API_KEY" https://api.serverspace.ru/api/v1/ssh-keys |  json_pp
+```
+
 ### del server (tested)
 
 ```bash
