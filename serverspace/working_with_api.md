@@ -70,7 +70,8 @@ curl -s -H "Content-Type: application/json" -H "X-API-KEY: $MY_API_KEY" https://
 
 
 curl -s -H "Content-Type: application/json" -H "X-API-KEY: $MY_API_KEY" https://$LOCATION/api/v1/locations | json_pp
-
+curl https://$LOCATION/api/v1/locations -H "X-API-KEY: $MY_API_KEY" | json_pp | jq '.locations[].id'
+curl https://$LOCATION/api/v1/locations -H "X-API-KEY: $X_API_KEY" | json_pp | jq '.locations[] | select(.id == "uae")'
 
 curl -s -H "Content-Type: application/json" -H "X-API-KEY: $MY_API_KEY" https://$LOCATION/api/v1/applications  | json_pp
 ```
