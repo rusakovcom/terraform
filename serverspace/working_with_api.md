@@ -10,6 +10,9 @@ printenv | grep MY_API_KEY   # check
 
 ```bash
 curl -s -H "Content-Type: application/json" -H "X-API-KEY: $MY_API_KEY" https://$LOCATION/api/v1/servers | json_pp
+
+curl -s -H "Content-Type: application/json" -H "X-API-KEY: $MY_API_KEY" https://$LOCATION/api/v1/servers \
+| jq '{servers: [.servers[] | {name, location_id, id}]}'
 ```
 
 ### get ssh keys lisy
